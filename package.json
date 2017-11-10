@@ -1,0 +1,22 @@
+{
+  "name": "eventhub",
+  "version": "1.0.0",
+  "description": "EventHub is a new Web App containing information about coming events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbarcosb/EventHub.git"
+  },
+  "author": "Daniel Barcos (dbarcosb@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dbarcosb/EventHub/issues"
+  },
+  "homepage": "https://github.com/dbarcosb/EventHub#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
