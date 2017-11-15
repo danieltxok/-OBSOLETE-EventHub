@@ -3,8 +3,10 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
-const uglify = require('gulp-uglify');
 const cssnano = require('gulp-cssnano');
+const eslint = require('gulp-eslint');
+// const uglify = require('gulp-uglify'); // It does not support ES6 (+Babel is needed)
+const uglify = require('gulp-uglifyes'); // I found this doing the job (not well-known, but it works)
 const htmlmin = require('gulp-htmlmin');
 const rev = require('gulp-rev');
 const revdel = require('gulp-rev-delete-original');
@@ -23,7 +25,7 @@ gulp.task('browserSync', function () {
             baseDir: 'app'
         }
     })
-})
+});
 
 // SASS task for CSS
 gulp.task('sass', function () {
@@ -36,7 +38,7 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({ // Reloading with Browser Sync
             stream: true
         }));
-})
+});
 
 // Watchers
 gulp.task('watch', function () {
@@ -56,6 +58,15 @@ gulp.task('minifyCSS', function () {
         .pipe(cssnano())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css'))
+});
+
+// ESlint task
+// Create configuration file: ./node_modules/.bin/eslint --init
+gulp.task('lint', function () {
+    return gulp.src('app/js/**/*.js')
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError())
 });
 
 // JS Minification + Sourcemap
@@ -111,14 +122,14 @@ gulp.task('updateHTML', function () {
 gulp.task('fonts', function () {
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
-})
+});
 
 // Cleaning up
 gulp.task('clean', function () {
     return del.sync('dist').then(function (cb) {
         return cache.clearAll(cb);
     });
-})
+});
 gulp.task('clean:dist', function () {
     return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 });
@@ -129,18 +140,19 @@ gulp.task('build', function (callback) {
     runSequence(
         'clean:dist',
         'sass',
-        ['minifyCSS', 'minifyJS', 'minifyHTML', 'images'],
+        ['minifyCSS', 'minifyJS', 'minifyHTML'],
+        // 'images',
         'ver-append',
         'updateHTML',
         callback
     )
-})
+});
 // Compiles Sass into CSS while watching HTML and JS files for changes
 gulp.task('default', function (callback) {
     runSequence(['sass', 'browserSync'], 'watch',
         callback
     )
-})
+});
 
 // Resources
 // https://css-tricks.com/gulp-for-beginners/
