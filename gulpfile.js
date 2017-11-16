@@ -35,9 +35,7 @@ gulp.task('sass', function () {
             browsers: ['last 2 versions']
         }))
         .pipe(gulp.dest('app/css')) // Outputs it in the css folder
-        .pipe(browserSync.reload({ // Reloading with Browser Sync
-            stream: true
-        }));
+        .pipe(browserSync.stream()); // browserSync.stream for CSS
 });
 
 // Watchers
@@ -45,7 +43,7 @@ gulp.task('watch', function () {
     // Runs sass task whenever SCSS files change
     gulp.watch('app/scss/**/*.scss', ['sass']);
     // Reloads the browser whenever HTML or JS files change
-    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/*.html', browserSync.reload); // browserSync.reload for HTML & JS
     gulp.watch('app/js/**/*.js', browserSync.reload);
     // Other watchers
 })
