@@ -24,7 +24,7 @@ gulp.task('browserSync', function () {
         server: {
             baseDir: 'app'
         }
-    })
+    });
 });
 
 // SASS task for CSS
@@ -55,7 +55,7 @@ gulp.task('minifyCSS', function () {
         .pipe(sourcemaps.init())
         .pipe(cssnano())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/css'));
 });
 
 // ESlint task
@@ -64,7 +64,7 @@ gulp.task('lint', function () {
     return gulp.src('app/js/**/*.js')
         .pipe(eslint())
         .pipe(eslint.format())
-        .pipe(eslint.failAfterError())
+        .pipe(eslint.failAfterError());
 });
 
 // JS Minification + Sourcemap
@@ -74,7 +74,7 @@ gulp.task('minifyJS', function () {
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('dist/js'));
 });
 
 // HTML Minification
@@ -86,6 +86,12 @@ gulp.task('minifyHTML', function () {
         .pipe(gulp.dest('dist'));
 });
 
+// Copy libraries
+gulp.task('copyLib', function () {
+    return gulp.src('app/lib/**/**.*')
+        .pipe(gulp.dest('dist/lib'));
+});
+
 // Images optimization
 gulp.task('images', function () {
     return gulp.src('app/img/**/*.+(png|jpg|jpeg|gif|svg)')
@@ -93,7 +99,7 @@ gulp.task('images', function () {
         .pipe(cache(imagemin({
             interlaced: true
         })))
-        .pipe(gulp.dest('dist/img'))
+        .pipe(gulp.dest('dist/img'));
 });
 
 // Rename  static minified files
@@ -107,19 +113,19 @@ gulp.task('ver-append', function () {
         .pipe(revdel())
         .pipe(gulp.dest('dist'))
         .pipe(rev.manifest('manifest.json'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist'));
 });
 // Rename them inside the files (update references)
 gulp.task('updateHTML', function () {
     return gulp.src(['dist/manifest.json', 'dist/**/*.{html, json, css, js}'])
         .pipe(collect())
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist'));
 });
 
 // Just copying fonts to dist
 gulp.task('fonts', function () {
     return gulp.src('app/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('dist/fonts'));
 });
 
 // Cleaning up
@@ -138,18 +144,18 @@ gulp.task('build', function (callback) {
     runSequence(
         'clean:dist',
         'sass',
-        ['minifyCSS', 'minifyJS', 'minifyHTML'],
+        ['minifyCSS', 'minifyJS', 'minifyHTML', 'copyLib'],
         // 'images',
         'ver-append',
         'updateHTML',
         callback
-    )
+    );
 });
 // Compiles Sass into CSS while watching HTML and JS files for changes
 gulp.task('default', function (callback) {
     runSequence(['sass', 'browserSync'], 'watch',
         callback
-    )
+    );
 });
 
 // Resources
