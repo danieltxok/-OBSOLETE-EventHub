@@ -1,0 +1,37 @@
+// Media queries
+// https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+@mixin phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin phone-landscape-only {
+  @media (max-width: 899px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait-only {
+  @media (min-width: 600px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

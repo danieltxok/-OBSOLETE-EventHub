@@ -9,43 +9,97 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>EventHub</title>
-<link rel="stylesheet" href="css/app-shell.css" type="text/css" />
+    <link rel="stylesheet" href="css/app-shell.css" type="text/css"></link>
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" type="text/css"></link>
+    <script src="js/app-shell.js" defer></script>
 </head>
 
-<body>
+<body class="body" id="body">
     <!--****************** HEADER ********************-->
-    <header>
-        <div>
-                <a href="/index.html" target="_blank">
-                    <!-- <img class="logo" src="images/logos/logo-inverted.svg" /> -->
-                </a>
-        </div>
-        <div>
-            <h1 id='total'>¿Nd tienxssessd plan para hoy? Encuéntralo&nbspaquí</h1>
-        </div>
+    <header class="header" id="header">
+        <a class="header-hamburger">&#9776;</a>
+        <h1 class="header-title">EventHub</h1>
     </header>
 
+    <!--****************** NAV ********************-->
+    <nav class="nav-menu" id="nav-menu">
+        <div class="nav-left">
+            <div class="nav-left-top">
+                <img class="logo" src="img/icon.svg" />
+            </div>
+            <div class="nav-left-bottom">
+                <a class="nav-section" href="back.html">Home</a>
+                <a class="nav-section" href="back.html">Add your event</a>
+                <a class="nav-section" href="back.html">About us</a>
+            </div>
+            <ul>
+                <li class="facebook">
+                    <a href="back.html" target="_blank" class="fa-stack fa-lg">
+                        <i class="fa fa-facebook fa-lg"></i>
+                    </a>
+                </li>
+                <li class="whatsapp">
+                    <a href="back.html" target="_blank" class="fa-stack fa-lg">
+                        <i class="fa fa-whatsapp fa-lg"></i>
+                    </a>
+                </li>
+                <li class="twitter">
+                    <a href="back.html" target="_blank" class="fa-stack fa-lg">
+                        <i class="fa fa-twitter fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <section class="main">
-        <!--****************** TODAY ********************-->
-        <div id="today" class="container-today"></div>
-
-        <!--****************** FOLLOWING ********************-->
-        <div id="following" class="container-following"></div>
+    <!--****************** MAIN SECTION ********************-->
+    <section class="main" id="main" style="padding-top: 3.75rem;">
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
     </section>
 
     <!--****************** FOOTER ********************-->
-    <footer>
-        <div class="container-footer">
-            <ul class="social-icons">
-                <!--<li class="pointer"><i class="fa fa-google-plus"></i></li>-->
-            </ul>
-            <ul class="contact">
-                <li>contact@eventhub.com</li>
-            </ul>
-        </div>
+    <footer class="footer" id="footer">
+        <ul class="social-icons">
+            <li class="facebook">
+                <a href="back.html" target="_blank" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                </a>
+            </li>
+            <li class="whatsapp">
+                <a href="back.html" target="_blank" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-whatsapp fa-stack-1x"></i>
+                </a>
+            </li>
+            <li class="twitter">
+                <a href="back.html" target="_blank" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="contact">
+            <li>contact@eventhub.com</li>
+        </ul>
     </footer>
-
 </body>
 
 </html>

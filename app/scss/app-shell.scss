@@ -1,0 +1,32 @@
+// Variables
+@import '_variables.scss';
+
+// Variables
+@import '_media-queries.scss';
+
+// html 
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: $first-font;
+  font-weight: 400;
+}
+
+// body
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+// Sections
+@import '_header.scss';
+@import '_nav-menu.scss';
+@import '_footer.scss';
