@@ -1,10 +1,6 @@
 # EventHub - Manage & share your events!
 
-<!--<h1 align="center">
-  <img src="" alt="eventhub-icon">
-</h1>-->
-
-**EventHub** is a new Web App containing information about coming events. Users will be able to manage their own events by easily adding, editing & sharing them. This is under development and contributions or comments are more than welcome. If interested, request for collaboration. Thanks!
+**EventHub** is a new Web App containing information about coming events. Users will be able to manage their own events by easily adding, editing & sharing them. This is under development and contributions or comments are more than welcome. Click [here](https://dbarcosb.github.io) to check the newest version of the app and if interested, request for collaboration. Thanks!
 
 Table of Contents
 -----------------
@@ -33,13 +29,17 @@ Getting Started
 Running
 -------
 
-TBD
+1. Once you installed the dependencies, you can run `gulp` to start the local server.
+
+2. Navigate to [localhost:3000](http://localhost:3000/) to access the app.
+
+3. Run  `gulp build` to populate the dis/ folder with the files for production.
 
 <a name="features"></a>
 Features
 --------
 
-TBD
+* Responsive app shell (Nov20)
 
 <a name="license"></a>
 License
