@@ -1,0 +1,154 @@
+.placeholder {
+  height: 4rem; }
+  @media (min-width: 600px) and (orientation: portrait) {
+    .placeholder {
+      height: 2rem; } }
+  @media (min-width: 900px) {
+    .placeholder {
+      height: 2rem; } }
+
+section {
+  padding: 0rem 1.2rem;
+  margin: 1.5rem 0rem 2rem 0rem; }
+  section div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    @media (min-width: 1200px) {
+      section div {
+        padding: 0rem 5rem; } }
+
+.subheader {
+  color: #97271c;
+  font-size: 0.8rem; }
+  .subheader h1 {
+    margin: 1.2rem 0;
+    border-bottom: 0.05rem solid #97271c; }
+
+article {
+  padding: 1rem 1rem 0rem 1rem;
+  width: auto;
+  background-color: white;
+  border: 0.05rem solid #e6e6e6;
+  margin: 0rem 0rem 1.2rem 0rem; }
+  @media (min-width: 600px) and (orientation: portrait) {
+    article {
+      width: 18rem; } }
+  @media (min-width: 900px) {
+    article {
+      width: 25rem; } }
+  @media (min-width: 1200px) {
+    article {
+      width: 20rem; } }
+
+.event .hero-content {
+  height: 5rem;
+  display: block;
+  padding: 0; }
+  .event .hero-content .name-container {
+    height: inherit;
+    width: auto;
+    overflow: hidden;
+    display: block;
+    padding: 0; }
+    .event .hero-content .name-container .title-container {
+      color: #3c3c3c;
+      margin: 0.25rem 0.7rem 1rem 0rem;
+      padding: 0;
+      display: block; }
+      .event .hero-content .name-container .title-container h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    .event .hero-content .name-container .subtitle-container {
+      display: block;
+      margin: 1rem 0.7rem 0.5rem 0rem;
+      color: #464646;
+      padding: 0; }
+      .event .hero-content .name-container .subtitle-container p {
+        padding: 0;
+        margin: 0;
+        font-size: 0.9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-height: 1rem;
+        max-height: 2rem;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; }
+  .event .hero-content .image-container {
+    display: block;
+    height: inherit;
+    width: 5rem;
+    padding: 0;
+    background-color: red;
+    float: right; }
+
+.event .extra-content {
+  height: 3rem;
+  color: #8a8a8a;
+  display: block;
+  padding: 0; }
+  .event .extra-content .extra-container {
+    display: block;
+    width: auto;
+    overflow: hidden;
+    padding: 0.8rem 0rem 1.5rem 0rem; }
+    .event .extra-content .extra-container p {
+      margin: 1rem;
+      font-size: 0.8rem;
+      display: inline; }
+      .event .extra-content .extra-container p i {
+        padding-right: 0.5rem; }
+  .event .extra-content .button-container {
+    display: block;
+    height: inherit;
+    width: 5rem;
+    float: right;
+    text-align: right;
+    padding: 0rem; }
+    .event .extra-content .button-container button {
+      color: #8a8a8a;
+      padding: 0.6rem 0rem 0.2rem 0rem;
+      margin: 0;
+      width: 100%; }
+      @media (min-width: 900px) {
+        .event .extra-content .button-container button {
+          border-style: none; } }
+      .event .extra-content .button-container button span {
+        width: 100%; }
+        .event .extra-content .button-container button span i {
+          font-size: 1.2rem;
+          display: inline;
+          padding: 0rem 0.5rem; }
+
+#today div article .extra-content .extra-container .date {
+  display: none; }
+  @media (max-width: 899px) and (orientation: landscape) {
+    #today div article .extra-content .extra-container .date {
+      display: inline; } }
+
+#today div article .extra-content .extra-container .price {
+  display: none; }
+  @media (max-width: 899px) and (orientation: landscape) {
+    #today div article .extra-content .extra-container .price {
+      display: inline; } }
+
+#following div article .extra-content .extra-container .time {
+  display: none; }
+  @media (max-width: 899px) and (orientation: landscape) {
+    #following div article .extra-content .extra-container .time {
+      display: inline; } }
+
+#following div article .extra-content .extra-container .price {
+  display: none; }
+  @media (max-width: 899px) and (orientation: landscape) {
+    #following div article .extra-content .extra-container .price {
+      display: inline; } }

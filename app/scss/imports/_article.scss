@@ -1,0 +1,158 @@
+// article
+article {
+    // margin: 1.2rem 0;
+    padding: 1rem 1rem 0rem 1rem;
+    width: auto;
+    background-color: $white;
+    border: 0.05rem solid $box-border-color;
+    margin: 0rem 0rem 1.2rem 0rem;
+    @include tablet-portrait-only {
+        width: 18rem; // display: inline-block;
+        // margin: 0rem 0rem 1.2rem 0rem;
+        // justify-content: space-between;
+    }
+    @include tablet-landscape-up {
+        width: 25rem; // display: inline-block;
+        // margin: 0rem 0rem 1.2rem 0rem; // justify-content: space-between;
+    }
+    @include desktop-up {
+        width: 20rem; // display: inline-block;
+        // margin: 0rem 1rem 1.2rem 1rem;
+        // margin: 0rem 0rem 1.2rem 0rem; // justify-content: space-between;
+    }
+}
+
+.event {
+    .hero-content {
+        height: 5rem; //margin-bottom: 0.5rem;a
+        display: block;
+        padding: 0;
+        .name-container {
+            height: inherit;
+            width: auto;
+            overflow: hidden;
+            display: block;
+            padding: 0;
+            .title-container {
+                color: $first-article-text-color;
+                margin: 0.25rem 0.7rem 1rem 0rem;
+                padding: 0;
+                display: block;
+                h2 {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1.2rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .subtitle-container {
+                display: block;
+                margin: 1rem 0.7rem 0.5rem 0rem;
+                color: $second-article-text-color;
+                padding: 0;
+                p {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 0.9rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    line-height: 1rem;
+                    max-height: 2rem;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+        .image-container {
+            display: block;
+            height: inherit;
+            width: 5rem; // margin:0;
+            padding: 0;
+            background-color: red;
+            float: right;
+        }
+    }
+    .extra-content {
+        height: 3rem;
+        color: $text-nav-color;
+        display: block;
+        padding: 0;
+        .extra-container {
+            display: block;
+            width: auto;
+            overflow: hidden; // background-color: blue;
+            padding: 0.8rem 0rem 1.5rem 0rem; //text-align: center;
+            p {
+                margin: 1rem;
+                font-size: 0.8rem;
+                display: inline;
+                i {
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+        .button-container {
+            display: block;
+            height: inherit;
+            width: 5rem; // margin:0;
+            // padding:0;
+            // background-color: yellow;
+            float: right;
+            text-align: right;
+            padding: 0rem;
+            button {
+                color: $text-nav-color; // background-color: $white;
+                // border-style: none;
+                padding: 0.6rem 0rem 0.2rem 0rem;
+                margin: 0; // display: inline;
+                width: 100%; //color: $second-color;
+                @include tablet-landscape-up {
+                    border-style: none;
+                }
+                span {
+                    width: 100%;
+                    i {
+                        font-size: 1.2rem;
+                        display: inline;
+                        padding: 0rem 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#today div article .extra-content .extra-container {
+    .date {
+        display: none;
+        @include phone-landscape-only {
+            display: inline;
+        }
+    }
+    .price {
+        display: none;
+        @include phone-landscape-only {
+            display: inline;
+        }
+    }
+}
+
+#following div article .extra-content .extra-container {
+    .time {
+        display: none;
+        @include phone-landscape-only {
+            display: inline;
+        }
+    }
+    .price {
+        display: none;
+        @include phone-landscape-only {
+            display: inline;
+        }
+    }
+}
+
+//continue with the structure like Medium web but design as medium App

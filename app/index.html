@@ -10,19 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>EventHub</title>
     <link rel="stylesheet" href="css/app-shell.css" type="text/css"></link>
+    <link rel="stylesheet" href="css/content.css" type="text/css"></link>
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" type="text/css"></link>
     <script src="js/app-shell.js" defer></script>
 </head>
 
 <body class="body" id="body">
     <!--****************** HEADER ********************-->
-    <header class="header" id="header">
+    <header id="header">
         <a class="header-hamburger">&#9776;</a>
         <h1 class="header-title">EventHub</h1>
     </header>
 
     <!--****************** NAV ********************-->
-    <nav class="nav-menu" id="nav-menu">
+    <nav id="nav-menu">
         <div class="nav-left">
             <div class="nav-left-top">
                 <img class="logo" src="img/icon.svg" />
@@ -52,30 +53,597 @@
         </div>
     </nav>
 
-    <!--****************** MAIN SECTION ********************-->
-    <section class="main" id="main" style="padding-top: 3.75rem;">
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
-        <div style="width:20rem; height: 12rem; margin: 2rem; display:inline-block; background: rgb(117, 117, 119);"></div>
+    <div class="placeholder"></div>
+
+    <!--****************** MAIN SECTIONS ********************-->
+    <section id="today">
+        <header class="subheader">
+            <h1>Today</h1>
+        </header>
+        <div>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="following">
+        <header class="subheader">
+            <h1>Following days...</h1>
+        </header>
+        <div>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="event">
+                <div class="hero-content">
+                    <div class="image-container"></div>
+                    <div class="name-container">
+                        <div class="title-container">
+                            <h2>Title of the event</h2>
+                        </div>
+                        <div class="subtitle-container">
+                            <p>Description of the event, if too long it is cut after the second line, if more info needed, click
+                                and the complete event will open</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-content">
+                    <div class="button-container">
+                        <button>
+                            <span class="fa-stack fa-lg">
+                                <!-- <i class="fa fa-circle-o fa-stack-1x"></i> -->
+                                <i class="fa fa-thumbs-o-down"></i>
+                                <i class="fa fa-thumbs-o-up"></i>
+                            </span>
+                        </button>
+                        <p></p>
+                    </div>
+                    <div class="extra-container">
+                        <p class="date">
+                            <i class="fa fa-calendar"></i>Date here</p>
+                        <p class="time">
+                            <i class="fa fa-clock-o"></i>22:00</p>
+
+                        <p class="location">
+                            <i class="fa fa-map-marker"></i>Location</p>
+                        <p class="price">
+                            <i class="fa fa-euro"></i>9</p>
+                    </div>
+
+                </div>
+            </article>
+        </div>
     </section>
 
     <!--****************** FOOTER ********************-->
-    <footer class="footer" id="footer">
+    <footer id="footer">
         <ul class="social-icons">
             <li class="facebook">
                 <a href="back.html" target="_blank" class="fa-stack fa-lg">
@@ -103,3 +671,37 @@
 </body>
 
 </html>
+
+<!-- <article class="event" itemscope="" itemtype="http://schema.org/Event" style="position: absolute; left: 0px; top: 10px;">
+            <div class="image">
+                <img itemprop="image" src="http://www.zentralpamplona.com/wp-content/uploads/2017/05/Gansos-Rosas-Jimmy-Jazz-Gasteiz-475x400.jpg"
+                    alt="Musica">
+            </div>
+            <div class="content">
+                <a itemprop="url" href="http://www.zentralpamplona.com/event/gansos-rosas/" target="_blank">
+                    <h2 itemprop="name">Gansos Rosas</h2>
+                </a>
+                <p itemprop="startDate">
+                    <i class="fa fa-calendar"></i>24 de noviembre, viernes</p>
+                <p itemprop="doorTime">
+                    <i class="fa fa-clock-o"></i>21:00</p>
+                <p itemprop="location">
+                    <i class="fa fa-map-marker"></i>Zentral</p>
+                <p class="description" itemprop="description">
+                    <i class="fa fa-file-text-o"></i>Calificados por el bateri?a original de Guns N' Roses Steve Adler como el mejor grupo tributo de
+                    los Guns en Europa, Gansos Rosas esta?n avalados tambie?n por los miles de aficionados y seguidores que
+                    les han seguido en los numerosos escenarios que han recorrido durante su primera de?cada de vida.</p>
+            </div>
+            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.pamplonatoday.com/">
+                <i id="facebook_desktop" class="fa fa-facebook-square share pointer"></i>
+            </a>
+            <a href="fb-messenger://share/?link=http://www.pamplonatoday.com/">
+                <i id="facebook_mobile" class="fa fa-facebook-square share pointer"></i>
+            </a>
+            <a href="whatsapp://send?text=Gansos Rosas http://www.pamplonatoday.com/" data-action="share/whatsapp/share">
+                <i id="whatsapp_mobile" class="fa fa-whatsapp share pointer"></i>
+            </a>
+            <a target="_blank" href="http://twitter.com/home?status=Gansos Rosas pamplonatoday.com">
+                <i class="fa fa-twitter-square share pointer"></i>
+            </a>
+        </article> -->

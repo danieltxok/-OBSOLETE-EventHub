@@ -1,0 +1,41 @@
+// Variables
+@import 'imports/_variables.scss';
+
+// Variables
+@import 'imports/_media-queries.scss';
+
+// placeholder for the fixed header
+.placeholder {
+  height: 4rem;
+   @include tablet-portrait-only {
+     height: 2rem;
+   }
+
+   @include tablet-landscape-up {
+     height: 2rem;
+   }
+}
+
+// main sections
+section {
+  padding: 0rem 1.2rem;
+  margin: 1.5rem 0rem 2rem 0rem;
+    //   @include tablet-portrait-only {
+    //   margin: 1rem 0rem 2rem 0rem;
+    // }
+  div {
+    // margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    @include desktop-up {
+      // width: 18rem; // display: inline-block;
+      padding: 0rem 5rem;
+      // margin: 0rem 0rem 1.2rem 0rem; // justify-content: space-between;
+    }
+  }
+}
+
+// Sections
+@import 'imports/_subheader.scss';
+@import 'imports/_article.scss';

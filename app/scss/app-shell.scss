@@ -1,8 +1,8 @@
 // Variables
-@import '_variables.scss';
+@import 'imports/_variables.scss';
 
 // Variables
-@import '_media-queries.scss';
+@import 'imports/_media-queries.scss';
 
 // html 
 html {
@@ -24,9 +24,10 @@ body {
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
+  background-color: $background-color;
 }
 
 // Sections
-@import '_header.scss';
-@import '_nav-menu.scss';
-@import '_footer.scss';
+@import 'imports/_header.scss';
+@import 'imports/_nav-menu.scss';
+@import 'imports/_footer.scss';
