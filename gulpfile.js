@@ -5,8 +5,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const cssnano = require('gulp-cssnano');
 const eslint = require('gulp-eslint');
-// const uglify = require('gulp-uglify'); // It does not support ES6 (+Babel is needed)
-const uglify = require('gulp-uglifyes'); // I found this doing the job (not well-known, but it works)
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 const htmlmin = require('gulp-htmlmin');
 const rev = require('gulp-rev');
 const revdel = require('gulp-rev-delete-original');
@@ -72,6 +72,9 @@ gulp.task('lint', function () {
 gulp.task('minifyJS', function () {
     return gulp.src('app/js/**/*.js')
         .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/js'));
@@ -86,9 +89,9 @@ gulp.task('minifyHTML', function () {
         .pipe(gulp.dest('dist'));
 });
 
-// Copy libraries
+// Copying libraries to dist
 gulp.task('copyLib', function () {
-    return gulp.src('app/lib/**/**.*')
+    return gulp.src('app/lib/**/*')
         .pipe(gulp.dest('dist/lib'));
 });
 
@@ -122,7 +125,7 @@ gulp.task('updateHTML', function () {
         .pipe(gulp.dest('dist'));
 });
 
-// Just copying fonts to dist
+// Copying fonts to dist
 gulp.task('fonts', function () {
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'));
