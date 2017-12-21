@@ -97,10 +97,11 @@ article {
   display: block;
   padding: 0; }
   .event .extra-content .extra-container {
-    display: block;
     width: auto;
     overflow: hidden;
-    padding: 0.8rem 0rem 1.5rem 0rem; }
+    padding: 0rem;
+    height: inherit;
+    vertical-align: middle; }
     .event .extra-content .extra-container p {
       margin: 1rem;
       font-size: 0.8rem;
@@ -112,22 +113,25 @@ article {
     height: inherit;
     width: 5rem;
     float: right;
-    text-align: right;
+    text-align: center;
     padding: 0rem; }
     .event .extra-content .button-container button {
       color: #8a8a8a;
-      padding: 0.6rem 0rem 0.2rem 0rem;
-      margin: 0;
-      width: 100%; }
+      padding: 0rem;
+      width: auto;
+      height: inherit; }
       @media (min-width: 900px) {
         .event .extra-content .button-container button {
           border-style: none; } }
       .event .extra-content .button-container button span {
-        width: 100%; }
+        width: 100%;
+        cursor: pointer; }
         .event .extra-content .button-container button span i {
           font-size: 1.2rem;
           display: inline;
-          padding: 0rem 0.5rem; }
+          padding: 0.25rem; }
+    .event .extra-content .button-container button:focus {
+      outline: none; }
 
 #today div article .extra-content .extra-container .date {
   display: none; }

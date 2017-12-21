@@ -1,30 +1,24 @@
 // article
 article {
-    // margin: 1.2rem 0;
     padding: 1rem 1rem 0rem 1rem;
     width: auto;
     background-color: $white;
     border: 0.05rem solid $box-border-color;
     margin: 0rem 0rem 1.2rem 0rem;
     @include tablet-portrait-only {
-        width: 18rem; // display: inline-block;
-        // margin: 0rem 0rem 1.2rem 0rem;
-        // justify-content: space-between;
+        width: 18rem;
     }
     @include tablet-landscape-up {
-        width: 25rem; // display: inline-block;
-        // margin: 0rem 0rem 1.2rem 0rem; // justify-content: space-between;
+        width: 25rem;
     }
     @include desktop-up {
-        width: 20rem; // display: inline-block;
-        // margin: 0rem 1rem 1.2rem 1rem;
-        // margin: 0rem 0rem 1.2rem 0rem; // justify-content: space-between;
+        width: 20rem;
     }
 }
 
 .event {
     .hero-content {
-        height: 5rem; //margin-bottom: 0.5rem;a
+        height: 5rem;
         display: block;
         padding: 0;
         .name-container {
@@ -69,7 +63,7 @@ article {
         .image-container {
             display: block;
             height: inherit;
-            width: 5rem; // margin:0;
+            width: 5rem;
             padding: 0;
             background-color: red;
             float: right;
@@ -81,10 +75,11 @@ article {
         display: block;
         padding: 0;
         .extra-container {
-            display: block;
             width: auto;
-            overflow: hidden; // background-color: blue;
-            padding: 0.8rem 0rem 1.5rem 0rem; //text-align: center;
+            overflow: hidden;
+            padding: 0rem;
+            height: inherit;
+            vertical-align: middle;
             p {
                 margin: 1rem;
                 font-size: 0.8rem;
@@ -97,29 +92,30 @@ article {
         .button-container {
             display: block;
             height: inherit;
-            width: 5rem; // margin:0;
-            // padding:0;
-            // background-color: yellow;
+            width: 5rem;
             float: right;
-            text-align: right;
+            text-align: center;
             padding: 0rem;
             button {
-                color: $text-nav-color; // background-color: $white;
-                // border-style: none;
-                padding: 0.6rem 0rem 0.2rem 0rem;
-                margin: 0; // display: inline;
-                width: 100%; //color: $second-color;
+                color: $text-nav-color;
+                padding: 0rem;
+                width: auto;
+                height: inherit;
                 @include tablet-landscape-up {
                     border-style: none;
                 }
                 span {
                     width: 100%;
+                    cursor: pointer;
                     i {
                         font-size: 1.2rem;
                         display: inline;
-                        padding: 0rem 0.5rem;
+                        padding: 0.25rem;
                     }
                 }
+            }
+            button:focus {
+                outline: none;
             }
         }
     }
@@ -154,5 +150,3 @@ article {
         }
     }
 }
-
-//continue with the structure like Medium web but design as medium App
