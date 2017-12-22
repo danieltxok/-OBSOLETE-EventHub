@@ -1,5 +1,6 @@
 /dist
 /node_modules
+/app/css
 .DS_Store
 Thumbs.db
 npm-debug.log
