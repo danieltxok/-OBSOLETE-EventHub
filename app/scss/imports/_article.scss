@@ -101,9 +101,8 @@ article {
                 padding: 0rem;
                 width: auto;
                 height: inherit;
-                @include tablet-landscape-up {
-                    border-style: none;
-                }
+                border-style: none;
+                background-color: transparent;
                 span {
                     width: 100%;
                     cursor: pointer;
